@@ -1,0 +1,21 @@
+name: GitHub Pages Action
+on: [push]
+jobs:
+  gh-pages:
+    name: GitHub Pages
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: Install dependencies
+        run: npm ci
+      - name: Deploy
+        run: |
+          git config --global user.email "water34545@yandex.ru"
+          git config --global user.name "Water34545"
+          git remote set-url origin https://Water34545:${{ secrets.GH_PAGES }}@github.com/Water34545/test_tetu.git
+          npm run deploy
