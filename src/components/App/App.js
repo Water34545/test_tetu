@@ -1,5 +1,7 @@
 import { observer } from "mobx-react-lite";
 import { useEffect } from 'react';
+import { Layout, Card, Col, Row } from 'antd';
+import formatNumber from '../../utils/formatNumber';
 
 const App = observer(({vaultsStore}) => {
   const {vaults, error} = vaultsStore;
@@ -11,15 +13,16 @@ const App = observer(({vaultsStore}) => {
 
   if(error) return <div>{error}</div>
   
-  return (
-    <div className="App">
-      {vaults.length > 0 && vaults.map((vault) => <div key={vault.addr}>
-        <p>{vault.addr}</p>
-        <p>{vault.name}</p>
-        <p>{vault.platform}</p>
-      </div>)}  
-    </div>
-  );
+  return <Layout className="layout">
+    <Layout.Content style={{ padding: '26px' }}>
+      {vaults.length > 0 && vaults.map((vault) => <Card key={vault.addr}>
+        <Row>
+          <Col span={12}>Name : {vault.name}</Col>
+          <Col span={12}>tvl: ${formatNumber(vault.tvlUsdc)}</Col>
+        </Row>
+      </Card>)}
+    </Layout.Content>
+  </Layout>
 });
 
 export default App;
