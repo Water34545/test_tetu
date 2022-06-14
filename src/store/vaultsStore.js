@@ -14,7 +14,6 @@ class vaultsStore {
     try {
       const responce = await fetch("https://api.tetu.io/api/v1/reader/vaultInfos?network=MATIC");
       const data = await responce.json();
-      console.log(data)
       runInAction(() => {
         this.vaults = [...data]
         this.error = null
