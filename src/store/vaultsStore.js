@@ -24,8 +24,4 @@ export default class vaultsStore {
       })
     }
   }
-
-  getVault = (addr) => {
-    return this.vaults.filter(vault => vault.addr === addr)[0];
-  }
 }
