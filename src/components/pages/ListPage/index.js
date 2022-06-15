@@ -8,7 +8,7 @@ const ListPage = observer(() => {
   const { vaultsStore: {error, vaults, fetchVaults} } = useStore();
 
   useEffect(() => {
-    fetchVaults();
+    if(vaults.length < 1) fetchVaults();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   

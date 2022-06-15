@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'antd/dist/antd.min.css';
 import vaultsStore from './store/vaultsStore';
-import App from './components/App';
+import App from './components/common/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

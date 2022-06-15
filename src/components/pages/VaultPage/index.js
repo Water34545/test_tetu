@@ -10,6 +10,7 @@ const VaultPage = observer(() => {
 
   useEffect(() => {
     if(vaults.length < 1) fetchVaults();
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
