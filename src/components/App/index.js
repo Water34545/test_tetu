@@ -1,0 +1,16 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ListPage from '../pages/ListPage';
+import VaultPage from '../pages/VaultPage';
+
+const App = () => {
+  return <BrowserRouter>
+    <Routes>
+      <Route path="/">
+        <Route index element={<ListPage/>}/>
+        <Route path="vault/:addr" element={<VaultPage/>}/>
+      </Route>
+    </Routes>
+  </BrowserRouter>
+};
+
+export default App;

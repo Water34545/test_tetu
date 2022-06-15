@@ -1,6 +1,6 @@
 import {runInAction, makeAutoObservable} from 'mobx';
 
-class vaultsStore {
+export default class vaultsStore {
   vaults = [];
   error = null;
 
@@ -8,22 +8,24 @@ class vaultsStore {
     makeAutoObservable(this);
   }
 
-  async fetchVaults() {
-    this.vaults = []
+  fetchVaults = async () => {
+    this.vaults = [];
 
     try {
       const responce = await fetch("https://api.tetu.io/api/v1/reader/vaultInfos?network=MATIC");
       const data = await responce.json();
       runInAction(() => {
-        this.vaults = [...data]
-        this.error = null
+        this.vaults = data;
+        this.error = null;
       })
     } catch (e) {
       runInAction(() => {
-        this.error = `fetchVaults error: ${e.massage}`
+        this.error = `fetchVaults error: ${e.message}`;
       })
     }
   }
-}
 
-export default new vaultsStore();
+  getVault = (addr) => {
+    return this.vaults.filter(vault => vault.addr === addr)[0];
+  }
+}
