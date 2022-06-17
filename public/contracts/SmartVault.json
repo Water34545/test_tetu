@@ -90314,14 +90314,14 @@
     "5777": {
       "events": {},
       "links": {
-        "VaultLibrary": "0x42d94018D22f134f67562F0bF7B30DE93c33c93D"
+        "VaultLibrary": "0x74a120eb257eaAD01f1fd94362a13D3605246eE6"
       },
-      "address": "0x449c7902d0258Ea85D2509814FcAA13FbB028459",
-      "transactionHash": "0xeaef00634676e6dad06f0edb7f2b97f61d653d967cd419e3e015d551c6b9bc27"
+      "address": "0xD7b8f1AD716eFf68F683d07c5bDEb34b1f1C42C6",
+      "transactionHash": "0x0d06e1db035f1918c06e1776967fcad28e6fa4f719416e6de51a772d8b1a97a3"
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-06-16T18:41:47.673Z",
+  "updatedAt": "2022-06-17T11:48:13.261Z",
   "networkType": "ethereum",
   "devdoc": {
     "author": "belbix",

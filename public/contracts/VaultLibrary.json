@@ -28925,12 +28925,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x42d94018D22f134f67562F0bF7B30DE93c33c93D",
-      "transactionHash": "0x2108a6427bc2204217ddb86037fcc19fb66120fe211a5d25e557df800f986264"
+      "address": "0x74a120eb257eaAD01f1fd94362a13D3605246eE6",
+      "transactionHash": "0x9fc1f7c3b74e765effb8b1f5ec33de6be8fbf7de9e201c00e04d06a38570a8d2"
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-06-16T18:41:47.498Z",
+  "updatedAt": "2022-06-17T11:48:13.095Z",
   "networkType": "ethereum",
   "devdoc": {
     "author": "belbix",
