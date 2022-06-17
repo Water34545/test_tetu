@@ -1,0 +1,383 @@
+{
+  "contractName": "IControllableExtended",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "created",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "ts",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "controller",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "adr",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"controller\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"adr\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"created\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"ts\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"This interface contains additional functions for Controllable class      Don't extend the exist Controllable for the reason of huge coherence\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interface/IControllableExtended.sol\":\"IControllableExtended\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":150},\"remappings\":[]},\"sources\":{\"project:/contracts/interface/IControllableExtended.sol\":{\"keccak256\":\"0x77e61a3fed90232233fbb60cfb71d257405d908534fff7fb8d1d9b47d5c7b2b1\",\"license\":\"ISC\",\"urls\":[\"bzz-raw://4623a853b0db818be00a5113cd1c50597b929d80bc0120e6f7b6ed57db570a51\",\"dweb:/ipfs/Qmcx7y8JxSzgi4LySaHs9W6WpEmKFfKJ8YVvQRRVXuQqns\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: ISC\n/**\n * By using this software, you understand, acknowledge and accept that Tetu\n * and/or the underlying software are provided “as is” and “as available”\n * basis and without warranties or representations of any kind either expressed\n * or implied. Any use of this open source software released under the ISC\n * Internet Systems Consortium license is done at your own risk to the fullest\n * extent permissible pursuant to applicable law any and all liability as well\n * as all warranties, including any fitness for a particular purpose with respect\n * to Tetu and/or the underlying software and the use thereof are disclaimed.\n */\n\npragma solidity ^0.8.0;\n\n/// @dev This interface contains additional functions for Controllable class\n///      Don't extend the exist Controllable for the reason of huge coherence\ninterface IControllableExtended {\n    function created() external view returns (uint256 ts);\n\n    function controller() external view returns (address adr);\n}\n",
+  "sourcePath": "/Users/cipher/Documents/work/test_tetu/contracts/interface/IControllableExtended.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interface/IControllableExtended.sol",
+    "exportedSymbols": {
+      "IControllableExtended": [
+        4652
+      ]
+    },
+    "id": 4653,
+    "license": "ISC",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4640,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "672:23:6"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IControllableExtended",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 4641,
+          "nodeType": "StructuredDocumentation",
+          "src": "697:155:6",
+          "text": "@dev This interface contains additional functions for Controllable class\n      Don't extend the exist Controllable for the reason of huge coherence"
+        },
+        "fullyImplemented": false,
+        "id": 4652,
+        "linearizedBaseContracts": [
+          4652
+        ],
+        "name": "IControllableExtended",
+        "nameLocation": "862:21:6",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "325a19f1",
+            "id": 4646,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "created",
+            "nameLocation": "899:7:6",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4642,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "906:2:6"
+            },
+            "returnParameters": {
+              "id": 4645,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4644,
+                  "mutability": "mutable",
+                  "name": "ts",
+                  "nameLocation": "940:2:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4646,
+                  "src": "932:10:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4643,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "932:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "931:12:6"
+            },
+            "scope": 4652,
+            "src": "890:54:6",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "f77c4791",
+            "id": 4651,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "controller",
+            "nameLocation": "959:10:6",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4647,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "969:2:6"
+            },
+            "returnParameters": {
+              "id": 4650,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4649,
+                  "mutability": "mutable",
+                  "name": "adr",
+                  "nameLocation": "1003:3:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4651,
+                  "src": "995:11:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4648,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "995:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "994:13:6"
+            },
+            "scope": 4652,
+            "src": "950:58:6",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 4653,
+        "src": "852:158:6",
+        "usedErrors": []
+      }
+    ],
+    "src": "672:339:6"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/interface/IControllableExtended.sol",
+    "exportedSymbols": {
+      "IControllableExtended": [
+        4652
+      ]
+    },
+    "id": 4653,
+    "license": "ISC",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4640,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "672:23:6"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IControllableExtended",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 4641,
+          "nodeType": "StructuredDocumentation",
+          "src": "697:155:6",
+          "text": "@dev This interface contains additional functions for Controllable class\n      Don't extend the exist Controllable for the reason of huge coherence"
+        },
+        "fullyImplemented": false,
+        "id": 4652,
+        "linearizedBaseContracts": [
+          4652
+        ],
+        "name": "IControllableExtended",
+        "nameLocation": "862:21:6",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "325a19f1",
+            "id": 4646,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "created",
+            "nameLocation": "899:7:6",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4642,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "906:2:6"
+            },
+            "returnParameters": {
+              "id": 4645,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4644,
+                  "mutability": "mutable",
+                  "name": "ts",
+                  "nameLocation": "940:2:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4646,
+                  "src": "932:10:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4643,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "932:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "931:12:6"
+            },
+            "scope": 4652,
+            "src": "890:54:6",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "f77c4791",
+            "id": 4651,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "controller",
+            "nameLocation": "959:10:6",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4647,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "969:2:6"
+            },
+            "returnParameters": {
+              "id": 4650,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4649,
+                  "mutability": "mutable",
+                  "name": "adr",
+                  "nameLocation": "1003:3:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4651,
+                  "src": "995:11:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4648,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "995:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "994:13:6"
+            },
+            "scope": 4652,
+            "src": "950:58:6",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 4653,
+        "src": "852:158:6",
+        "usedErrors": []
+      }
+    ],
+    "src": "672:339:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.13+commit.abaa5c0e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-06-16T18:34:18.469Z",
+  "devdoc": {
+    "details": "This interface contains additional functions for Controllable class      Don't extend the exist Controllable for the reason of huge coherence",
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

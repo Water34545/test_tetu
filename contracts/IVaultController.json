@@ -1,0 +1,368 @@
+{
+  "contractName": "IVaultController",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "rewardBoostDuration",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "rewardRatioWithoutBoost",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"rewardBoostDuration\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"rewardRatioWithoutBoost\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interface/IVaultController.sol\":\"IVaultController\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":150},\"remappings\":[]},\"sources\":{\"project:/contracts/interface/IVaultController.sol\":{\"keccak256\":\"0x8cfe5a61dec5d289ad018597964778defeaee05fcbc6a1dad01336af0b468eba\",\"license\":\"ISC\",\"urls\":[\"bzz-raw://ba9f63aa7a11174920c88b9b480eb23bb6d3b92dd41ab8ad0f0a8be6ac964488\",\"dweb:/ipfs/QmcHPU5sCHLcNTbJ2qDfBfrFrRPqhZEMWdL9knDH6hhRbn\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: ISC\n/**\n * By using this software, you understand, acknowledge and accept that Tetu\n * and/or the underlying software are provided “as is” and “as available”\n * basis and without warranties or representations of any kind either expressed\n * or implied. Any use of this open source software released under the ISC\n * Internet Systems Consortium license is done at your own risk to the fullest\n * extent permissible pursuant to applicable law any and all liability as well\n * as all warranties, including any fitness for a particular purpose with respect\n * to Tetu and/or the underlying software and the use thereof are disclaimed.\n */\n\npragma solidity ^0.8.0;\n\ninterface IVaultController {\n    function rewardBoostDuration() external view returns (uint256);\n\n    function rewardRatioWithoutBoost() external view returns (uint256);\n}\n",
+  "sourcePath": "/Users/cipher/Documents/work/test_tetu/contracts/interface/IVaultController.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interface/IVaultController.sol",
+    "exportedSymbols": {
+      "IVaultController": [
+        5340
+      ]
+    },
+    "id": 5341,
+    "license": "ISC",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5329,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "672:23:10"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IVaultController",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 5340,
+        "linearizedBaseContracts": [
+          5340
+        ],
+        "name": "IVaultController",
+        "nameLocation": "707:16:10",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "a25c2362",
+            "id": 5334,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "rewardBoostDuration",
+            "nameLocation": "739:19:10",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5330,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "758:2:10"
+            },
+            "returnParameters": {
+              "id": 5333,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5332,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5334,
+                  "src": "784:7:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5331,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "784:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "783:9:10"
+            },
+            "scope": 5340,
+            "src": "730:63:10",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "4b389e22",
+            "id": 5339,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "rewardRatioWithoutBoost",
+            "nameLocation": "808:23:10",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5335,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "831:2:10"
+            },
+            "returnParameters": {
+              "id": 5338,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5337,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5339,
+                  "src": "857:7:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5336,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "857:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "856:9:10"
+            },
+            "scope": 5340,
+            "src": "799:67:10",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5341,
+        "src": "697:171:10",
+        "usedErrors": []
+      }
+    ],
+    "src": "672:197:10"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/interface/IVaultController.sol",
+    "exportedSymbols": {
+      "IVaultController": [
+        5340
+      ]
+    },
+    "id": 5341,
+    "license": "ISC",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5329,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "672:23:10"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IVaultController",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 5340,
+        "linearizedBaseContracts": [
+          5340
+        ],
+        "name": "IVaultController",
+        "nameLocation": "707:16:10",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "a25c2362",
+            "id": 5334,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "rewardBoostDuration",
+            "nameLocation": "739:19:10",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5330,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "758:2:10"
+            },
+            "returnParameters": {
+              "id": 5333,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5332,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5334,
+                  "src": "784:7:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5331,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "784:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "783:9:10"
+            },
+            "scope": 5340,
+            "src": "730:63:10",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "4b389e22",
+            "id": 5339,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "rewardRatioWithoutBoost",
+            "nameLocation": "808:23:10",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5335,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "831:2:10"
+            },
+            "returnParameters": {
+              "id": 5338,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5337,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5339,
+                  "src": "857:7:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5336,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "857:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "856:9:10"
+            },
+            "scope": 5340,
+            "src": "799:67:10",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5341,
+        "src": "697:171:10",
+        "usedErrors": []
+      }
+    ],
+    "src": "672:197:10"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.13+commit.abaa5c0e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-06-16T18:34:18.507Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
