@@ -5,7 +5,7 @@ import VaultPage from '../../pages/VaultPage';
 
 const App = () => {
   return <>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Header/>
       <Routes>
         <Route path="/">
