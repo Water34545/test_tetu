@@ -1,9 +1,11 @@
-import React from "react";
-import vaultsStore from "./vaultsStore";
+import React from 'react';
+import vaultsStore from './vaultsStore';
+import valletStore from './valletStore';
 
 class RootStore {
   constructor() {
     this.vaultsStore = new vaultsStore(this);
+    this.valletStore = new valletStore(this);
   }
 };
 
