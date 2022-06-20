@@ -15,7 +15,7 @@ const ListPage = observer(() => {
   return error ? <p>{error}</p> :
     <Layout className="layout">
       <Layout.Content style={{ padding: '26px' }}>
-        {vaults.length > 0 && vaults.map(vault => <VaultsPrev key={vault.addr} vault={vault}/>)}
+        {vaults.length > 0 && vaults.filter(vault=> vault.active).map(vault => <VaultsPrev key={vault.addr} vault={vault}/>)}
       </Layout.Content>
     </Layout>
 });
