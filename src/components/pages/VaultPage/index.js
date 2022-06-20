@@ -26,7 +26,7 @@ const VaultPage = observer(() => {
 
   useEffect(() => {
     if(contract && address) getBallance(address);
-  }, [address, contract, getBallance]);
+  }, [contractAddr, address, contract, getBallance]);
   
   const onClickDeposit = async () => {
     const amount = ethers.utils.parseEther(`${deposit}`);
