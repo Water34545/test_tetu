@@ -5,12 +5,12 @@ import VaultPage from '../../pages/VaultPage';
 
 const App = () => {
   return <>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.REACT_APP_PUBLIC_URL}>
       <Header/>
       <Routes>
         <Route path="/">
           <Route index element={<ListPage/>}/>
-          <Route path="vault/:addr" element={<VaultPage/>}/>
+          <Route path="vault/:contractAddr" element={<VaultPage/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
