@@ -1,22 +1,22 @@
 import { ethers } from 'ethers';
-const NETWORK_ID = process.env.NETWORK_ID;
 
-export const loadContract = async (name) => {
-  console.log(process.env.NETWORK_ID)
-  console.log(process.env.PUBLIC_URL)
+export const loadContract = async (addres) => {
   const provider = new ethers.providers.Web3Provider(window.ethereum);
   let contract = null;
 
   try {
-    const res = await fetch(`/contracts/${name}.json`);
-    const Artifact = await res.json();
+    await provider.send("eth_requestAccounts", []);
+    const signer = provider.getSigner();
+  
+    const abiResp = await fetch(`https://api.polygonscan.com/api?module=contract&action=getabi&address=${addres}&apikey=VYW2NF7NZK63M81GENYQZKP1B631PKM9ZG`);
+    const abi = await abiResp.json();
     contract = new ethers.Contract(
-      Artifact.networks[NETWORK_ID].address,
-      Artifact.abi,
-      provider
+      addres,
+      abi.result,
+      signer
     );
-  } catch {
-    console.log(`Contract ${name} is not deployed`);
+  } catch(e) {
+    throw(e);
   }
 
   return contract;
