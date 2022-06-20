@@ -33,7 +33,6 @@ export default class valletStore {
       runInAction(() => {
         this.address = accounts[0];
       });
-      this.getBallance();
     } catch (e) {
       runInAction(() => {
         this.error = `connect error: ${e.message}`;
